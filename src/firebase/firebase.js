@@ -2,12 +2,7 @@ import  firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/database';
 const config = {
-    apiKey: "AIzaSyC5IEcJ3tufQhpUd1NnDWIoehoZgHWksVU",
-    authDomain: "nateswensonio.firebaseapp.com",
-    databaseURL: "https://nateswensonio.firebaseio.com",
-    projectId: "nateswensonio",
-    storageBucket: "nateswensonio.appspot.com",
-    messagingSenderId: "908747001731"
+//'Hahaha'
   };
   firebase.initializeApp(config);
   export default firebase;
