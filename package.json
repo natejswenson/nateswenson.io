@@ -1,7 +1,7 @@
 {
   "name": "nateswenson.io",
   "version": "0.1.0",
-  "homepage": "/",
+  "homepage": "https://swenson11.github.io/nateswenson.io",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.2",
