@@ -1,5 +1,5 @@
 import React from 'react';
-import SPAL from './landing.js';
+import Landing from './landing.js';
 import { Grid } from 'semantic-ui-react';
 
 class Home extends React.Component {
@@ -7,12 +7,12 @@ class Home extends React.Component {
     return (
       <Grid>
         <Grid.Row>
-        <Grid.Column width={3}>
+        <Grid.Column width={1}>
         </Grid.Column>
-        <Grid.Column width={10}>
-          <SPAL />
+        <Grid.Column width={14}>
+          <Landing />
       </Grid.Column>
-      <Grid.Column width={3}>
+      <Grid.Column width={1}>
       </Grid.Column>
       </Grid.Row>
     </Grid>
