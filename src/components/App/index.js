@@ -13,7 +13,7 @@ import HomePage from '../Home';
 import Footer from '../../Footer'
 import AccountPage from '../Account';
 import Certs from '../Certs';
-import SwensonLeather from '../SwensonLeather';
+import SwensonLeather from '../../classes';
 import withAuthentication from '../Session/withAuthentication';
 import * as routes from '../../constants/routes';
 

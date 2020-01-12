@@ -1,5 +1,5 @@
 import React from 'react';
-import SPAL from './SPAL.js';
+import SPAL from './landing.js';
 import { Grid } from 'semantic-ui-react';
 
 class Home extends React.Component {
