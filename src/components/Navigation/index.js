@@ -17,44 +17,22 @@ const Navigation = ({ sessionStore }) =>
 
 const NavigationAuth = () =>
 <div class="header">
-  <Segment inverted>
-    <Menu inverted secondary>
-    <Link to={routes.LANDING}><Menu.Item><Button circular >
-      <Button.Content>
-        <Icon name='home icon' />
-      </Button.Content>
-    </Button></Menu.Item></Link>
-    <Link to={routes.HOME}><Menu.Item><Button circular>
-      <Button.Content >
-        <Icon name='user' />
-      </Button.Content>
-    </Button></Menu.Item></Link>
-    <Link to={routes.ACCOUNT}><Menu.Item><Button circular>
-      <Button.Content>
-        <Icon name='cogs' />
-      </Button.Content>
-    </Button></Menu.Item></Link>
+  <Menu pointing secondary> 
+    <Link to={routes.LANDING}><Menu.Item  name='home'/></Link>
+    <Link to={routes.Leather}><Menu.Item  name='classes' /></Link>
+    <Link to={routes.ACCOUNT}><Menu.Item  name='my account' /></Link>
     <SignOutButton />
     </Menu>
-      </Segment>
       </div>
 
 const NavigationNonAuth = () =>
 <div class="header">
-<Segment inverted>
-  <Menu inverted secondary>
-  <Link to={routes.LANDING}><Menu.Item><Button circular>
-      <Button.Content>
-        <Icon name='home icon' />
-      </Button.Content>
-    </Button></Menu.Item></Link>
-    <Link to={routes.SIGN_IN}><Menu.Item><Button circular>
-      <Button.Content>
-        <Icon name='sign-in' />
-      </Button.Content>
-    </Button></Menu.Item></Link>
-    </Menu>
-      </Segment>
+  <Menu pointing secondary>
+    <Link to={routes.LANDING}><Menu.Item  name='home' /></Link>
+    <Link to={routes.Leather}><Menu.Item  name='classes' /></Link>
+    <Link to={routes.Wallets}><Menu.Item  name='For Sale' /></Link>
+    <Link to={routes.SIGN_IN}><Menu.Item  name='sign in' /></Link>
+  </Menu>
       </div>
 
 export default compose(

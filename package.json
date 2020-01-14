@@ -9,6 +9,7 @@
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.1",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react-app": "^3.0.2",
     "babel-runtime": "6.26.0",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
@@ -26,8 +27,10 @@
     "file-loader": "0.11.2",
     "firebase": "^5.5.7",
     "fs-extra": "3.0.1",
+    "gh-pages": "2.2.0",
     "gulp": "^3.9.1",
     "html-webpack-plugin": "2.29.0",
+    "infinite-react-carousel": "^1.2.8",
     "jest": "20.0.4",
     "mobx": "^4.1.1",
     "mobx-react": "^5.0.0",
@@ -37,6 +40,7 @@
     "promise": "8.0.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-awesome-slider": "^3.0.3",
     "react-dev-utils": "^4.2.2",
     "react-dom": "^15.6.1",
     "react-responsive-modal": "^3.5.1",
@@ -49,8 +53,7 @@
     "webpack": "3.5.1",
     "webpack-dev-server": "2.7.1",
     "webpack-manifest-plugin": "1.2.1",
-    "whatwg-fetch": "2.0.3",
-    "gh-pages": "2.2.0"
+    "whatwg-fetch": "2.0.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -104,6 +107,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "babel-plugin-transform-decorators-legacy": "^1.3.4"
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "html-loader": "^0.5.5"
   }
 }

@@ -12,6 +12,7 @@ import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
 import Footer from '../../Footer'
 import AccountPage from '../Account';
+import Wallets from '../../Products'
 import Certs from '../Certs';
 import SwensonLeather from '../../classes';
 import withAuthentication from '../Session/withAuthentication';
@@ -32,6 +33,7 @@ const App = () =>
       <Route exact path={routes.HOME} component={() => <HomePage />} />
       <Route exact path={routes.ACCOUNT} component={() => <AccountPage />} />
       <Route exact path={routes.Leather} component={() => <SwensonLeather />} />
+      <Route exact path={routes.Wallets} component={() => <Wallets/>} />
       <Footer />
     </div>
   </Router>
