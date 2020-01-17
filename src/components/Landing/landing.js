@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import { Divider,Grid,Button, Card} from 'semantic-ui-react';
+import {Grid,Button, Card} from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
-import * as routes from '../../constants/routes';
 import Landing from './landing.json';
 import color from '../../../src/color.json'
 

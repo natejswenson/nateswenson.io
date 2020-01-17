@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Icon, Segment,Sticky} from 'semantic-ui-react';
-import color from '../src/color.json'
+import {Icon, Segment} from 'semantic-ui-react';
+import color from '../../../src/color.json'
 
 
 class footer extends Component{

@@ -1,9 +1,10 @@
 
 import { Link } from 'react-router-dom';
-import json from './navigation.json';
+import json from '../../../src/navigation.json';
 import React, { Component } from 'react';
 import { Menu,Grid} from 'semantic-ui-react';
-import color from '../../../src/color.json'
+
+
 var style = {
   backgroundColor: "#ffffff",
   borderTop: "0px solid #000000",
@@ -17,7 +18,9 @@ var style = {
 export default class MenuExampleSecondaryPointing extends Component {
   constructor(){
     super();
-    this.state={color,json,activeItem:'Swenson Leather'}
+    this.state={json,activeItem:'Swenson Leather'}
+    var colors ={...json.color}
+    this.setState({colors})
     }
   handleItemClick = (e, {name }) => this.setState({ activeItem: name })
   render() {
@@ -29,8 +32,8 @@ export default class MenuExampleSecondaryPointing extends Component {
       </Grid.Column>
       <Grid.Column width={16}>
         <div style={style}>
-        <Menu pointing secondary color={color.color}>{
-          this.state.json.slice().map((json,i)=>
+        <Menu pointing secondary color={json.color[0].color}>{
+          this.state.json.navigation.slice().map((json,i)=>
               <Link to={json.route}><Menu.Item name={json.name} active={activeItem === json.name} onClick={this.handleItemClick}/></Link>
             )}
         </Menu>

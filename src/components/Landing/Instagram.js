@@ -1,6 +1,6 @@
 import InstagramEmbed from 'react-instagram-embed';
 import React from 'react';
-import { Grid,Divider,Button,Transition} from 'semantic-ui-react';
+import { Grid} from 'semantic-ui-react';
 class insta extends React.Component {  
  
   render() {
