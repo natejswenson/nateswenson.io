@@ -6,7 +6,7 @@ import LandingPage from '../Landing';
 import Footer from './Footer'
 import Wallets from '../Products'
 import SwensonLeather from './classes';
-import * as routes from '../../constants/routes';
+import * as routes from '../constants/routes';
 import './index.css';
 import { Sticky } from 'semantic-ui-react';
 
