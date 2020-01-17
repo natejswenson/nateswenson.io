@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid} from 'semantic-ui-react';
-import Video from './classes'
+import LeatherClasses from './classes'
 
 
 class Home extends React.Component {
@@ -8,12 +8,12 @@ class Home extends React.Component {
     return (
       <Grid stackable >
         <Grid.Row attached='true'  style={{ minHeight: 600, padding: '5em 0em' }}>
-        <Grid.Column width={3}>
+        <Grid.Column width={1}>
         </Grid.Column>
-          <Grid.Column width={10}>
-           <Video />
+          <Grid.Column width={14}>
+           <LeatherClasses />
           </Grid.Column> 
-          <Grid.Column width={3}>
+          <Grid.Column width={1}>
           </Grid.Column>
         </Grid.Row>
       </Grid>

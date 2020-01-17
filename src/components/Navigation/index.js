@@ -1,41 +1,47 @@
-import React from 'react';
-import { inject, observer } from 'mobx-react';
+
 import { Link } from 'react-router-dom';
-import { Menu, Segment, Button,Icon } from 'semantic-ui-react'
-import { compose } from 'recompose';
-
-import SignOutButton from '../SignOut';
-import * as routes from '../../constants/routes';
-
-const Navigation = ({ sessionStore }) =>
-  <div>
-    { sessionStore.authUser
-        ? <NavigationAuth />
-        : <NavigationNonAuth />
+import json from './navigation.json';
+import React, { Component } from 'react';
+import { Menu,Grid} from 'semantic-ui-react';
+import color from '../../../src/color.json'
+var style = {
+  backgroundColor: "#ffffff",
+  borderTop: "0px solid #000000",
+  textAlign: "center",
+  position: "fixed",
+  left: "0",
+  top: "0",
+  height: "auto ",
+  width: "100%",
+}
+export default class MenuExampleSecondaryPointing extends Component {
+  constructor(){
+    super();
+    this.state={color,json,activeItem:'Swenson Leather'}
     }
-  </div>
-
-const NavigationAuth = () =>
-<div class="header">
-  <Menu pointing secondary> 
-    <Link to={routes.LANDING}><Menu.Item  name='home'/></Link>
-    <Link to={routes.Leather}><Menu.Item  name='classes' /></Link>
-    <Link to={routes.ACCOUNT}><Menu.Item  name='my account' /></Link>
-    <SignOutButton />
-    </Menu>
-      </div>
-
-const NavigationNonAuth = () =>
-<div class="header">
-  <Menu pointing secondary>
-    <Link to={routes.LANDING}><Menu.Item  name='home' /></Link>
-    <Link to={routes.Leather}><Menu.Item  name='classes' /></Link>
-    <Link to={routes.Wallets}><Menu.Item  name='For Sale' /></Link>
-    <Link to={routes.SIGN_IN}><Menu.Item  name='sign in' /></Link>
-  </Menu>
-      </div>
-
-export default compose(
-  inject('sessionStore'),
-  observer
-)(Navigation);
+  handleItemClick = (e, {name }) => this.setState({ activeItem: name })
+  render() {
+    const { activeItem} = this.state
+    return (
+      <Grid >
+      <Grid.Row>
+      <Grid.Column width={0}>
+      </Grid.Column>
+      <Grid.Column width={16}>
+        <div style={style}>
+        <Menu pointing secondary color={color.color}>{
+          this.state.json.slice().map((json,i)=>
+              <Link to={json.route}><Menu.Item name={json.name} active={activeItem === json.name} onClick={this.handleItemClick}/></Link>
+            )}
+        </Menu>
+        </div>
+        </Grid.Column>
+      <Grid.Column width={0}>
+      </Grid.Column>
+      </Grid.Row>
+    </Grid>
+       
+    
+    )
+  }
+}

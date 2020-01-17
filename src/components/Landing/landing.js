@@ -3,16 +3,17 @@ import { Divider,Grid,Button, Card} from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 import * as routes from '../../constants/routes';
 import Landing from './landing.json';
+import color from '../../../src/color.json'
 
 class Scrum extends (Component){
   constructor(){
     super();
-    this.state={Landing}
+    this.state={Landing,color}
     }
   render(){
     return(
     <div>
-    <Divider horizontal>SWENSON LEATHER</Divider>
+      <br/>
       <Grid stackable columns={1}>{
       this.state.Landing.slice().map((Landing,i)=>
         <Grid.Column>    
@@ -22,7 +23,10 @@ class Scrum extends (Component){
             <Card.Description>{Landing.description}</Card.Description>
             </Card.Content>
             <Link to={Landing.btn}>
-              <Button fluid>{Landing.btn_name}</Button>
+              <Button attached='bottom'color={color.color} animated='fade' >
+                    <Button.Content visible>{Landing.btn_name}</Button.Content>
+                    <Button.Content hidden >{Landing.btn_hidden}</Button.Content>
+                  </Button>
             </Link>
             </Card>
           </Grid.Column>

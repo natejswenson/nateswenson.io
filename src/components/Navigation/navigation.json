@@ -1,0 +1,18 @@
+[
+{
+    "name": "Swenson Leather",
+    "route":"/",
+    "active":"activeItem==='Swenson Leather'"
+},
+{
+    "name": "Upcoming Courses",
+    "route":"/SwensonLeather",
+    "active:":"activeItem === 'Upcoming Courses'"
+},
+{
+    "name": "Leather Shop",
+    "route":"/SwensonShop",
+    "active":"activeItem==='Leather Shop'"
+}
+
+  ]
