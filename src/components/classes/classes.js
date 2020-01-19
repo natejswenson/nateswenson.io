@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Grid,Card,Button,Image } from 'semantic-ui-react';
-import json from '../../../../src/navigation.json';
+import json from '../../../src/navigation.json';
 class Scrum extends (Component){
   constructor(){
     super();

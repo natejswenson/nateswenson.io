@@ -1,8 +1,13 @@
 import React from 'react';
-import { Grid,Divider} from 'semantic-ui-react';
+import { Grid,Divider,Loader,Segment,Dimmer} from 'semantic-ui-react';
 
 class store extends React.Component {  
-
+  
+  constructor(){
+  super(); 
+  
+    
+}
 
 componentDidMount(){
  const script = document.createElement('script');
@@ -18,10 +23,13 @@ componentDidMount(){
 }
 
   render() {
+  
+
+    
     
     return(
       <div>
-        <Divider horizontal><h1>Fine Leather Goods</h1></Divider>
+        <Divider horizontal><h4>Fine Leather Goods</h4></Divider>
       <Grid stackable >
         <Grid.Row attached='true'  style={{ minHeight: 600, padding: '5em 0em' }}>
           <Grid.Column width={1}>

@@ -30,7 +30,7 @@
             "img":"https://d2isyty7gbnm74.cloudfront.net/unsafe/1292x1292/https://square-production.s3.amazonaws.com/files/4b075099fcf86bee72ce0c37e624be05fcc6757e/original.jpeg",
             "btn":"/SwensonLeather",
             "btn_name":"Upcoming Courses",
-            "btn_hidden":"Learn More!"
+            "btn_hidden":"student"
         },
         {
             "name": "Leatherwork For Sale",
@@ -38,7 +38,7 @@
             "img":"https://d2isyty7gbnm74.cloudfront.net/unsafe/1292x1292/https://square-production.s3.amazonaws.com/files/4b075099fcf86bee72ce0c37e624be05fcc6757e/original.jpeg",
             "btn":"/SwensonShop",
             "btn_name":"Shop Leather",
-            "btn_hidden":"Premium Leather Sale!"
+            "btn_hidden":"shop"
         }
     ],
     "classes":[
@@ -73,6 +73,72 @@
             "img":"https://d2isyty7gbnm74.cloudfront.net/unsafe/1292x1292/https://square-production.s3.amazonaws.com/files/1766a82b41b5be07a56e7af262bdd775cf9ae507/original.jpeg",
             "cost":"$162.50",
             "btn":"https://squareup.com/store/aspireartisanstudios/item/leathercrafting-make-your-own-belt"
+        }
+    ],
+    "cool":[
+
+        {
+            "url": "https://www.instagram.com/p/BZHujD4lkQS/"
+         },
+        {
+           "url": "https://www.instagram.com/p/BZUoX6tlbYd/"
+        },
+        {
+            "url": "https://www.instagram.com/p/BYUN4qIlJl-/"
+         },
+        {
+           "url": "https://www.instagram.com/p/B7eRCq6gajo/"
+        },
+        {
+            "url":"https://www.instagram.com/p/B7eSPGGgbKG//"
+        },
+        {
+            "url":"https://www.instagram.com/p/B4SvomOgrdL/"
+        },
+       {
+            "url": "https://www.instagram.com/p/B3z_EaiAmf7/"
+        },
+        {
+            "url": "https://www.instagram.com/p/BrsohzSla6A/"
+        },
+        {
+            "url":"https://www.instagram.com/p/Brp0ZBklD2N/"
+        },
+        {
+            "url":"https://www.instagram.com/p/BcDmTCzjtSB/"
+        },
+       {
+            "url": "https://www.instagram.com/p/BbfoWY9D5Dp/"
+        },
+        {
+            "url": "https://www.instagram.com/p/Bbc9MaWjMDF/"
+        },
+        {
+            "url":"https://www.instagram.com/p/BbaZ-vgDOkD/"
+        },
+        {
+            "url":"https://www.instagram.com/p/BZZU3RBFEfO/"
+        },
+       {
+            "url": "https://www.instagram.com/p/BZes4sUFULs/"
+        },
+        {
+            "url": "https://www.instagram.com/p/BZkGEHtFlQS/"
+        },
+        {
+            "url":"https://www.instagram.com/p/BZo7HQhFXM1/"
+        },
+        {
+            "url":"https://www.instagram.com/p/BahvMbQD1Uj/"
+        },
+       {
+            "url": "https://www.instagram.com/p/BbVMY6rDlQi/"
+        },
+        {
+            "url": "https://www.instagram.com/p/BdLc-qyDELL/"
+        },
+        {
+            "url":"https://www.instagram.com/p/BbVg4lrjLb-/"
         }
     ]
 }
